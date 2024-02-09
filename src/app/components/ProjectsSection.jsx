@@ -102,7 +102,7 @@ const projectsData = [
     image: "/images/projects/nextjs.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/me",
-    previewUrl: "https://arnab7070.github.io/portfolio/",
+    previewUrl: "/",
   },
 ];
 

@@ -11,6 +11,9 @@ export const theme = {
       "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
     },
+    boxShadow: {
+      'xl': '-10px 10px 30px -10px rgba(0, 0, 0, 0.3)',
+    }
   },
   colors: {
     ...colors,
