@@ -37,7 +37,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Google IT Support</li>
         <li>Using Python access Web Data</li>
-        <li>Responsive website basics using HTML, CSS and JS</li>
+        <li>Responsive website basics using HTML, CSS and Javascript</li>
         <li>Introduction to AI</li>
         <li>Java Programming: Solving problems with software</li>
       </ul>
