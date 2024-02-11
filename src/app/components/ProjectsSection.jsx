@@ -6,9 +6,18 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 0,
+    title: "Skillverse - College Project",
+    description: "Course Management Website having Spam Detection & auto Quiz Generator System using ML",
+    image: "/images/projects/skillverse.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/arnab7070/skillverse",
+    previewUrl: "https://skillverse-arnab7070.vercel.app/",
+  },
+  {
     id: 1,
     title: "Rapid Reader",
-    description: "News & Books Summarizer website using Next JS, Redis, OpenAI API",
+    description: "News & Books Summarizer website using Next JS, Redis, OpenAI and Gemini API",
     image: "/images/projects/rapid_reader.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/rapidreader",
@@ -17,7 +26,7 @@ const projectsData = [
   {
     id: 2,
     title: "Syntax Valley Blog Website",
-    description: "A content management system using Next JS & MongoDB",
+    description: "A content management system using Next JS & MongoDB as backend",
     image: "/images/projects/blog.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/blog",
@@ -26,7 +35,7 @@ const projectsData = [
   {
     id: 3,
     title: "Dream Tracker using Flutter & Firebase",
-    description: "Application that can help you to manage your goals",
+    description: "Application that empowers you to achieve your goals, & make smart investments",
     image: "/images/projects/dream_tracker.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/arnab7070/Dream-Tracker",
@@ -44,7 +53,7 @@ const projectsData = [
   {
     id: 5,
     title: "Rhythm using Flutter",
-    description: "A beautiful android application for Ad-free Music Playing",
+    description: "Open-Source Music App and MP3 player for your entertainment",
     image: "/images/projects/rhythm.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/arnab7070/Rhythm",
@@ -62,7 +71,7 @@ const projectsData = [
   {
     id: 7,
     title: "URL Shortener",
-    description: "Short URL generator website using Next JS and MongoDB",
+    description: "Short URL generator website using Next JS and MongoDB for storing URL stats",
     image: "/images/projects/ulink.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/ulink-URL-Shortener",
@@ -80,7 +89,7 @@ const projectsData = [
   {
     id: 9,
     title: "Portfolio Website: 1",
-    description: "Portfolio website using bootstrap css",
+    description: "Professional Portfolio Website Utilizing Bootstrap CSS",
     image: "/images/projects/bootstrap.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/arnab7070",
@@ -89,7 +98,7 @@ const projectsData = [
   {
     id: 10,
     title: "Portfolio Website: 2",
-    description: "Portfolio website using tailwind css",
+    description: "Professional Portfolio Website Utilizing Tailwind CSS",
     image: "/images/projects/tailwind.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/portfolio",
@@ -98,7 +107,7 @@ const projectsData = [
   {
     id: 11,
     title: "Portfolio Website: 3",
-    description: "Portfolio website using nextjs",
+    description: "Professional Portfolio Website Utilizing NextJS",
     image: "/images/projects/nextjs.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/me",
@@ -146,7 +155,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-6">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-x-3 gap-y-8 md:gap-5">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
