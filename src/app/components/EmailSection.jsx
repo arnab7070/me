@@ -31,7 +31,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-20 relative"
     >
       <div className="rounded-full h-80 w-80 z-0 blur-3xl absolute top-1/6 left-40 transform -translate-x-1/2 -translate-1/2">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -40,9 +40,9 @@ const EmailSection = () => {
       </div>
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, x: [-500, 50, 0] }}
+        whileInView={{ opacity: 1, x: [-500, 0] }}
         viewport={{ once: true, amount: 'all' }}
-        animate={{ transition: { delay: 0.5 } }}
+        animate={{ transition: { delay: 1, duration: 2, ease: 'linear', type: "spring", bounce: 0.2 } }}
       >
         <div className="z-10">
           <h5 className="text-xl font-bold text-white my-2">
@@ -66,9 +66,9 @@ const EmailSection = () => {
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, scale: [0.5, 1.05, 1], }}
+        whileInView={{ opacity: 1, scale: [0.5, 1], y: [500, 0] }}
         viewport={{ once: true, amount: 'all' }}
-        animate={{ transition: { delay: 0.5 } }}
+        animate={{ transition: { delay: 1, duration: 2, ease: 'linear', type: "spring", bounce: 0.25 } }}
       >
         {emailSubmitted ? (
           <p className="text-green-500 text-xl mt-2">
