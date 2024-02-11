@@ -5,6 +5,7 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -37,26 +38,38 @@ const EmailSection = () => {
           <path fill="#8A3FFC" d="M63.7,-23.7C69.4,-3.3,51.7,21.7,29.7,36.6C7.8,51.6,-18.4,56.4,-32.7,45.8C-47,35.2,-49.5,9.2,-42,-13.6C-34.6,-36.4,-17.3,-56,5.9,-57.9C29,-59.8,58.1,-44.1,63.7,-23.7Z" transform="translate(100 100)" />
         </svg>
       </div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
-          Let&apos;s Connect
-        </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          I am actively seeking new professional opportunities and welcome inquiries. 
-          Whether you have inquiries or wish to connect, please feel free to reach out. 
-          I endeavor to respond promptly to all correspondence.
-        </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/arnab7070">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="https://www.linkedin.com/in/arnab7070/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, x: [-500, 50, 0] }}
+        viewport={{ once: true, amount: 'all' }}
+        animate={{ transition: { delay: 0.5 } }}
+      >
+        <div className="z-10">
+          <h5 className="text-xl font-bold text-white my-2">
+            Let&apos;s Connect
+          </h5>
+          <p className="text-[#ADB7BE] mb-4 max-w-md">
+            {" "}
+            I am actively seeking new professional opportunities and welcome inquiries.
+            Whether you have inquiries or wish to connect, please feel free to reach out.
+            I endeavor to respond promptly to all correspondence.
+          </p>
+          <div className="socials flex flex-row gap-2">
+            <Link href="https://github.com/arnab7070">
+              <Image src={GithubIcon} alt="Github Icon" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/arnab7070/">
+              <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            </Link>
+          </div>
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, scale: [0.5, 1.05, 1], }}
+        viewport={{ once: true, amount: 'all' }}
+        animate={{ transition: { delay: 0.5 } }}
+      >
         {emailSubmitted ? (
           <p className="text-green-500 text-xl mt-2">
             Email sent successfully!
@@ -117,7 +130,7 @@ const EmailSection = () => {
             </button>
           </form>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
