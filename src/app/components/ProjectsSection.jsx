@@ -13,6 +13,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/skillverse",
     previewUrl: "https://skillverse-arnab7070.vercel.app/",
+    features: ["NextJS", "MongoDB", "AWS", "ML", "OpenAI"],
   },
   {
     id: 1,
@@ -22,6 +23,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/rapidreader",
     previewUrl: "https://rapidreader.vercel.app/",
+    features: ["NextJS", "MongoDB", "Redis", "ML", "GeminiAI"],
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/blog",
     previewUrl: "https://blog-arnab7070.vercel.app/",
+    features: ["NextJS", "MongoDB", "Tailwind CSS", "AOS"],
   },
   {
     id: 3,
@@ -40,6 +43,7 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/arnab7070/Dream-Tracker",
     previewUrl: "https://github.com/EncryptoCyphers/Dream-Tracker/releases/tag/V1.0.0",
+    features: ["Flutter", "Firebase Authentication", "Firestore"],
   },
   {
     id: 4,
@@ -49,6 +53,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/arnab7070.github.io",
     previewUrl: "https://arnab7070.github.io/",
+    features: ["HUGO", "Markdown", "SEO Friendly"],
   },
   {
     id: 5,
@@ -58,6 +63,7 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/arnab7070/Rhythm",
     previewUrl: "https://github.com/EncryptoCyphers/Rhythm/releases/tag/V1",
+    features: ["Flutter", "Firebase", "Scraping", "User Friendly UI"],
   },
   {
     id: 6,
@@ -67,6 +73,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/codeforces",
     previewUrl: "https://arnab7070.github.io/codeforces/",
+    features: ["HTML, CSS, Javascript", "Codeforces API", "Bootstrap"],
   },
   {
     id: 7,
@@ -76,15 +83,17 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/ulink-URL-Shortener",
     previewUrl: "https://ulink-self.vercel.app/",
+    features: ["NextJS", "TailwindCSS", "MongoDB", "Rest API"],
   },
   {
     id: 8,
     title: "Contest Calendar",
-    description: "Mobile appliaction using Flutter that can track all upcoming Contests using Kontests API",
+    description: "Mobile appliaction using Flutter that can track all upcoming Contests using API",
     image: "/images/projects/contest_calendar.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/arnab7070/Contest_Calendar",
     previewUrl: "https://github.com/arnab7070/Contest_Calendar/releases/tag/appV3",
+    features: ["Flutter", "Kontests API", "Minimal UI Design"],
   },
   {
     id: 9,
@@ -94,6 +103,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/arnab7070",
     previewUrl: "https://arnab7070.github.io/arnab7070/",
+    features: ["Bootstrap", "HTML", "CSS", "Javascript"],
   },
   {
     id: 10,
@@ -103,6 +113,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/portfolio",
     previewUrl: "https://arnab7070.github.io/portfolio/",
+    features: ["Tailwind CSS", "HTML", "CSS", "Javascript"],
   },
   {
     id: 11,
@@ -112,6 +123,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/me",
     previewUrl: "/",
+    features: ["NextJS", "Framer Motion", "Email JS"],
   },
 ];
 
@@ -155,7 +167,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-x-3 gap-y-8 md:gap-5">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-x-3 gap-y-8 md:gap-8">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -171,6 +183,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              features={project.features}
             />
           </motion.li>
         ))}
