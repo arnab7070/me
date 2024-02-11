@@ -33,7 +33,7 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-20 relative"
     >
-      <div className="animate-pulse rounded-full h-80 w-80 z-0 blur-3xl absolute transform translate-x-1/3 -translate-1/2">
+      <div className="animate-pulse rounded-full h-60 w-60 z-0 blur-3xl absolute transform translate-x-1/5">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#8A3FFC" d="M63.7,-23.7C69.4,-3.3,51.7,21.7,29.7,36.6C7.8,51.6,-18.4,56.4,-32.7,45.8C-47,35.2,-49.5,9.2,-42,-13.6C-34.6,-36.4,-17.3,-56,5.9,-57.9C29,-59.8,58.1,-44.1,63.7,-23.7Z" transform="translate(100 100)" />
         </svg>
