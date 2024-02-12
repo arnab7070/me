@@ -2,7 +2,8 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-
+import Lottie from "lottie-react";
+import AboutSectionAnimation from "../../../public/aboutme.json"
 const TAB_DATA = [
   {
     title: "Skills",
@@ -95,7 +96,8 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <Image src="/images/about-image.png" width={500} height={500} className="rounded-lg shadow-lg shadow-purple-500 md:order-1 mt-10" />
+        <Lottie animationData={AboutSectionAnimation} loop={true} className="rounded-lg md:order-1 mt-10" />
+        {/* <Image src="/images/about-image.png" width={500} height={500} className="rounded-lg md:order-1 mt-10" /> */}
       </div>
     </section>
   );

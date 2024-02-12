@@ -33,22 +33,23 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-20 relative"
     >
-      <div className="animate-pulse rounded-full h-60 w-60 z-0 blur-3xl absolute transform translate-x-1/5">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#8A3FFC" d="M63.7,-23.7C69.4,-3.3,51.7,21.7,29.7,36.6C7.8,51.6,-18.4,56.4,-32.7,45.8C-47,35.2,-49.5,9.2,-42,-13.6C-34.6,-36.4,-17.3,-56,5.9,-57.9C29,-59.8,58.1,-44.1,63.7,-23.7Z" transform="translate(100 100)" />
-        </svg>
-      </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, x: [-500, 0] }}
+
+      {/* <motion.div
+        initial={{ opacity: 1 }}
+        whileInView={{ opacity: 1, x: [0, 0] }}
         viewport={{ once: true, amount: 'all' }}
-        transition={{ ease: "anticipate", delay: 0.2, duration: 2, type: 'spring' }}
-      >
-        <div className="z-10">
+        transition={{ ease: "anticipate", duration: 0.5, type: 'spring' }}
+      > */}
+        <div className="rounded-full h-60 w-60 absolute top-20 right-0 md:right-1/2 md:bottom-1">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="relative bottom-2" height={150} width={150}>
+            <path fill="#FF0066" d="M51,-60.8C61.7,-51.9,62.7,-31.6,59,-15.8C55.4,-0.1,46.9,11.1,40.7,24.9C34.4,38.7,30.2,55.1,18.6,65.6C7,76,-11.9,80.5,-26.2,74.3C-40.5,68.1,-50.1,51.3,-61.3,34.3C-72.5,17.2,-85.4,-0.1,-83.8,-15.8C-82.3,-31.6,-66.3,-45.8,-50,-53.7C-33.6,-61.6,-16.8,-63.2,1.7,-65.2C20.2,-67.2,40.4,-69.7,51,-60.8Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+        <div className="-mt-10 rounded-xl backdrop-blur-md bg-opacity-10 bg-white-900 w-full">
           <h5 className="text-xl font-bold text-white my-2">
             Let&apos;s Connect
           </h5>
-          <p className="text-[#ADB7BE] mb-4 max-w-md">
+          <p className="text-[#e8ecee] mb-4 max-w-md">
             {" "}
             I am actively seeking new professional opportunities and welcome inquiries.
             Whether you have inquiries or wish to connect, please feel free to reach out.
@@ -63,7 +64,7 @@ const EmailSection = () => {
             </Link>
           </div>
         </div>
-      </motion.div>
+      {/* </motion.div> */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, y: [500, 0] }}

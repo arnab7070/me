@@ -66,7 +66,7 @@ const HeroSection = () => {
             <Image
               src="/images/hero-image.png"
               alt="hero image"
-              className="absolute shadow-xl shadow-pink-500 rounded-full"
+              className="absolute shadow-md shadow-pink-600/30 rounded-full"
               width={370}
               height={340}
             />
