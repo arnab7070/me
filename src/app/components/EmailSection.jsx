@@ -5,7 +5,7 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { animate, easeIn, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -68,7 +68,7 @@ const EmailSection = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, y: [500, 0] }}
         viewport={{ once: true, amount: 'all' }}
-        transition={{ delay: 0.2, ease: "anticipate", duration: 1 }}
+        transition={{ delay: 0.2, ease: "anticipate", duration: 1, type: 'spring' }}
       >
         {emailSubmitted ? (
           <p className="text-green-500 text-xl mt-2">
