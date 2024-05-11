@@ -44,16 +44,16 @@ const HeroSection = () => {
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              Hire Me
+              Contact Me
             </Link>
-            <a
-              href="https://drive.usercontent.google.com/download?id=1ncfo4sgeZlgRpWBu3k-bdMHkUaSJ3RQz&export=download&authuser=0"
+            <Link
+              href="resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </a>
+            </Link>
           </div>
         </motion.div>
         <motion.div
@@ -64,7 +64,7 @@ const HeroSection = () => {
         >
           <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/me.jpg"
               alt="hero image"
               className="absolute shadow-md shadow-pink-600/30 rounded-full"
               width={370}
