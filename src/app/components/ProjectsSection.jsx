@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/skillverse.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/skillverse",
-    previewUrl: "https://skillverse-arnab7070.vercel.app/",
+    previewUrl: "https://skillverseaot.vercel.app/",
     features: ["NextJS", "MongoDB", "AWS", "ML", "OpenAI"],
   },
   {
@@ -27,6 +27,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Yumyard", 
+    description: "YumYard is a full-stack food delivery platform for personalized recommendations & chatbot support.",
+    image: "/images/projects/yumyard.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/arnab7070/Design-Dynamo_EC101A",
+    previewUrl: "https://yumyard.vercel.app/",
+    features: ["ReactJS", "Firebase", "Gemini LLM", "Dailogflow"],   
+  },
+  {
+    id: 3,
     title: "Syntax Valley Blog Website",
     description: "A content management system using Next JS & MongoDB as backend",
     image: "/images/projects/blog.png",
@@ -36,7 +46,7 @@ const projectsData = [
     features: ["NextJS", "MongoDB", "Tailwind CSS", "AOS"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Dream Tracker using Flutter & Firebase",
     description: "Application that empowers you to achieve your goals, & make smart investments",
     image: "/images/projects/dream_tracker.png",
@@ -46,7 +56,7 @@ const projectsData = [
     features: ["Flutter", "Firebase Authentication", "Firestore"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Code World using HUGO framework",
     description: "Coding blog website having lots of DSA concepts and solution of DSA problems",
     image: "/images/projects/code_world.png",
@@ -56,7 +66,7 @@ const projectsData = [
     features: ["HUGO", "Markdown", "SEO Friendly"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Rhythm using Flutter",
     description: "Open-Source Music App and MP3 player for your entertainment",
     image: "/images/projects/rhythm.png",
@@ -66,7 +76,7 @@ const projectsData = [
     features: ["Flutter", "Firebase", "Scraping", "User Friendly UI"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Codeforces 2.0",
     description: "Better UI implementation for codeforces website using HTML, bootstrap css and Codeforces API",
     image: "/images/projects/codeforces.png",
@@ -76,17 +86,17 @@ const projectsData = [
     features: ["HTML, CSS, Javascript", "Codeforces API", "Bootstrap"],
   },
   {
-    id: 7,
+    id: 8,
     title: "URL Shortener",
     description: "Short URL generator website using Next JS and MongoDB for storing URL stats",
     image: "/images/projects/ulink.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/ulink-URL-Shortener",
-    previewUrl: "https://ulink-self.vercel.app/",
+    previewUrl: "https://chotulink.vercel.app/",
     features: ["NextJS", "TailwindCSS", "MongoDB", "Rest API"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Contest Calendar",
     description: "Mobile appliaction using Flutter that can track all upcoming Contests using API",
     image: "/images/projects/contest_calendar.png",
@@ -96,7 +106,7 @@ const projectsData = [
     features: ["Flutter", "Kontests API", "Minimal UI Design"],
   },
   {
-    id: 9,
+    id: 10,
     title: "Portfolio Website: 1",
     description: "Professional Portfolio Website Utilizing Bootstrap CSS",
     image: "/images/projects/bootstrap.png",
@@ -106,7 +116,7 @@ const projectsData = [
     features: ["Bootstrap", "HTML", "CSS", "Javascript"],
   },
   {
-    id: 10,
+    id: 11,
     title: "Portfolio Website: 2",
     description: "Professional Portfolio Website Utilizing Tailwind CSS",
     image: "/images/projects/tailwind.png",
@@ -116,7 +126,7 @@ const projectsData = [
     features: ["Tailwind CSS", "HTML", "CSS", "Javascript"],
   },
   {
-    id: 11,
+    id: 12,
     title: "Portfolio Website: 3",
     description: "Professional Portfolio Website Utilizing NextJS",
     image: "/images/projects/nextjs.png",
