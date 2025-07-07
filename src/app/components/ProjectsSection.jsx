@@ -27,13 +27,13 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Yumyard", 
+    title: "Yumyard",
     description: "YumYard is a full-stack food delivery platform for personalized recommendations & chatbot support.",
     image: "/images/projects/yumyard.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/arnab7070/Design-Dynamo_EC101A",
-    previewUrl: "https://yumyard.vercel.app/",
-    features: ["ReactJS", "Firebase", "Gemini LLM", "Dailogflow"],   
+    previewUrl: "https://yumyardaot.vercel.app/",
+    features: ["ReactJS", "Firebase", "Gemini LLM", "Dailogflow"],
   },
   {
     id: 3,
