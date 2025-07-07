@@ -26,7 +26,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>B.Tech in Computer Science Engineering</li>
+        <li>B.Tech in CSE with 9.12 CGPA</li>
         <li>Higher Secondary with 96% marks</li>
       </ul>
     ),
